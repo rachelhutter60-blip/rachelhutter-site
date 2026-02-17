@@ -74,9 +74,9 @@ const surveyQuestions = [
 ]
 
 export default function SurveyPage() {
-  const [responses, setResponses] = useState({})
+    const [responses, setResponses] = useState<{ [key: string]: string | number }>({})
 
-  const handleChange = (questionId: string, value: any) => {
+  const handleChange = (questionId: string, value: string | number) => {
     setResponses({ ...responses, [questionId]: value })
   }
 
