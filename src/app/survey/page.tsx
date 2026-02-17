@@ -93,7 +93,7 @@ export default function SurveyPage() {
 
   return (
     <div style={{ padding: 20 }}>
-      <h1>Leadership Preference Survey</h1>
+      <h1 style={{ fontSize: 36, fontWeight: 700 }}>Leadership Preference Survey</h1>
       <form onSubmit={handleSubmit}>
         {surveyQuestions.map((q, idx) => (
           <div key={q.id} style={{ marginBottom: 30 }}>
@@ -186,7 +186,19 @@ export default function SurveyPage() {
           ))}
         </div>
 
-        <button type="submit" style={{ padding: '10px 20px', fontSize: 16 }}>
+        <button
+          type="submit"
+          style={{
+            padding: '10px 20px',
+            fontSize: 16,
+            fontWeight: 600,
+            backgroundColor: '#16a34a',
+            color: '#ffffff',
+            border: '1px solid #16a34a',
+            borderRadius: 12,
+            cursor: 'pointer',
+          }}
+        >
           Submit
         </button>
       </form>
