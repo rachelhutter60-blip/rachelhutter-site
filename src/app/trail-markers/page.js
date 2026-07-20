@@ -162,22 +162,22 @@ export default function TrailMarkers() {
     setError('');
     const chapterList = chosen.map((p) => p.chapter).join(', ');
     try {
-      const res = await fetch('https://formspree.io/f/mzdngywy', {
+      const res = await fetch('/api/subscribe', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          name,
           email,
-          trail_markers: chapterList,
-          plan_summary: chosen.map((p) => `${p.chapter}: ${p.action}`).join(' | '),
+          name,
+          trailMarkers: chapterList,
         }),
       });
+      const data = await res.json();
       if (res.ok) {
         setSubmitted(true);
       } else {
-        setError('Something went wrong. Please try again.');
+        setError(data.error || 'Something went wrong. Please try again.');
       }
-    } catch {
+    } catch (err) {
       setError('Something went wrong. Please try again.');
     }
     setSubmitting(false);
