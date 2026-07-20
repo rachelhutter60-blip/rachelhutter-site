@@ -162,7 +162,7 @@ export default function TrailMarkers() {
     setError('');
     const chapterList = chosen.map((p) => p.chapter).join(', ');
     try {
-      const res = await fetch('YOUR_FORMSPREE_URL', {
+      const res = await fetch('https://formspree.io/f/mzdngywy', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
