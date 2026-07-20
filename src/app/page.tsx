@@ -44,8 +44,14 @@ export default function Home() {
           />
         </div>
 
-        {/* Survey Link */}
-        <div className="mt-10 text-center">
+        {/* CTAs */}
+        <div className="mt-10 flex flex-col items-center gap-4 text-center">
+          <Link
+            href="/trail-markers"
+            className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition-colors"
+          >
+            Find your trail markers
+          </Link>
           <Link
             href="/survey"
             className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition-colors"
