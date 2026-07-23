@@ -95,7 +95,7 @@ const LEADERSHIP_LEVEL = [
 ];
 
 export default function Survey() {
-  const [answers, setAnswers] = useState({});
+  const [answers, setAnswers] = useState<Record<number, string>>({});
   const [similarity, setSimilarity] = useState('');
   const [experience, setExperience] = useState('');
   const [leadershipLevel, setLeadershipLevel] = useState('');
@@ -108,7 +108,7 @@ export default function Survey() {
   const answered = Object.keys(answers).length;
   const progress = Math.round((answered / QUESTIONS.length) * 100);
 
-  const setAnswer = (qId, val) => setAnswers(prev => ({ ...prev, [qId]: val }));
+  const setAnswer = (qId: number, val: string) => setAnswers(prev => ({ ...prev, [qId]: val }));
 
   const handleSubmit = async () => {
     if (!email) { setError('Please enter your email address.'); return; }
@@ -127,7 +127,7 @@ export default function Survey() {
       });
       if (res.ok) { setSubmitted(true); }
       else { setError('Something went wrong. Please try again.'); }
-    } catch { setError('Something went wrong. Please try again.'); }
+    } catch (err) { setError('Something went wrong. Please try again.'); }
     setSubmitting(false);
   };
 
