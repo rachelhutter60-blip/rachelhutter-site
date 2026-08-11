@@ -96,7 +96,7 @@ export default function Speaking() {
                   margin: '0 auto 1.5rem', border: '4px solid rgba(255,255,255,0.3)'
                 }}>
                   <img
-                    src="/Rachel_Hutter_Headshot-2.jpeg"
+                    src="/Rachel Hutter Headshot-2.jpeg"
                     alt="Rachel Hutter keynote speaker"
                     style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'top' }}
                     onError={(e) => {
