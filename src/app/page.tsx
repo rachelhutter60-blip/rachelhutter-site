@@ -44,21 +44,30 @@ export default function Home() {
           />
         </div>
 
-        {/* CTAs */}
-        <div className="mt-10 flex flex-col items-center gap-4 text-center">
-          <Link
-            href="/trail-markers"
-            className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition-colors"
-          >
-            Find your trail markers
-          </Link>
-          <Link
-            href="/survey"
-            className="inline-block rounded-lg bg-blue-600 px-6 py-3 text-lg font-semibold text-white hover:bg-blue-700 transition-colors"
-          >
-            Take the Leadership Preference Survey
-          </Link>
-        </div>
+{/* CTAs */}
+<div className="mt-10 flex flex-col items-center gap-4 text-center">
+        <Link
+          href="/speaking"
+          className="inline-block rounded-lg px-6 py-3 text-lg font-semibold text-white transition-colors"
+          style={{ backgroundColor: '#1a7268' }}
+        >
+          Book Rachel to Speak
+        </Link>
+        <Link
+          href="/trail-markers"
+          className="inline-block rounded-lg px-6 py-3 text-lg font-semibold text-white transition-colors"
+          style={{ backgroundColor: '#1a7268' }}
+        >
+          Find your trail markers
+        </Link>
+        <Link
+          href="/survey"
+          className="inline-block rounded-lg px-6 py-3 text-lg font-semibold text-white transition-colors"
+          style={{ backgroundColor: '#1a7268' }}
+        >
+          Take the Leadership Preference Survey
+        </Link>
+      </div>
       </main>
     </div>
   );
