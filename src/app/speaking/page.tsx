@@ -161,7 +161,7 @@ export default function Speaking() {
                   <div style={{ borderTop: '1px solid rgba(255,255,255,0.2)', paddingTop: 16 }}>
                     <div style={{ fontSize: 11, letterSpacing: '0.12em', textTransform: 'uppercase', opacity: 0.7, marginBottom: 8 }}>🎤 SEE RACHEL SPEAK</div>
                     <a
-                      href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                      href="https://www.youtube.com/watch?v=cQCd8eaeSeo&t=3420s"
                       target="_blank"
                       rel="noopener noreferrer"
                       style={{ color: WHITE, fontSize: 13, opacity: 0.9 }}
