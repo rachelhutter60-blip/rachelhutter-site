@@ -1,3 +1,9 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Rachel Hutter, PE, CSP — Keynote Speaker',
+  description: 'Former Disney EVP Rachel Hutter delivers keynotes on navigating change, operational leadership, and building high-performance teams. Book Rachel to speak.',
+};
 import Image from "next/image";
 import Link from "next/link";
 
@@ -8,10 +14,10 @@ export default function Home() {
 
         {/* Headline */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-extrabold leading-tight">
+        <h1 className="text-4xl md:text-5xl font-extrabold leading-tight" style={{ fontFamily: 'var(--font-playfair), serif' }}>
             Rachel Hutter, PE, CSP
           </h1>
-          <p className="mt-2 text-xl md:text-2xl text-gray-700">
+          <p className="mt-2 text-xl md:text-2xl text-gray-700" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
             Keynote Speaker
           </p>
         </div>
